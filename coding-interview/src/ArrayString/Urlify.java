@@ -4,11 +4,11 @@ public class Urlify {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		var str =Urlify("Mr John Smith    ".toCharArray(), 13);
+		var str =urlify("Mr John Smith    ".toCharArray(), 13);
 		System.out.println(str);
 	}
 
-	private static char[] Urlify(char[] chars, int size) {
+	private static char[] urlify(char[] chars, int size) {
 		int spaces = 0;
 		for (int i = 0; i < size - 1; i++) {
 			if(chars[i] == ' ')

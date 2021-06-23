@@ -29,14 +29,14 @@ public class IsUnique {
 
 	private void test(String str) {
 		
-		if(IsUnique(str)) {
+		if(isUnique(str)) {
 			System.out.println(str+" is unique ");
 		}else {
 			System.out.println(str+" is NOT unique ");			
 		}
 	}
 	
-	private boolean IsUnique(String str) {
+	private boolean isUnique(String str) {
 		HashSet<Character> set = new HashSet<Character>();
 		boolean repeat = false;
 		for (char c : str.toCharArray()) {
